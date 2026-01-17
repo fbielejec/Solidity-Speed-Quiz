@@ -21,6 +21,10 @@ watch: # Auto-compile contracts on file changes
 test-remove-element: # Excercise 1
 	forge test --match-test "test_removeElement" --match-contract RemoveElement
 
+.PHONY: test-string-concat
+test-string-concat: # Excercise 2
+	forge test --match-test "test_StringConcat"
+
 .PHONY: clean
 clean: # Clean build artifacts
 	@echo "Cleaning build artifacts..."
