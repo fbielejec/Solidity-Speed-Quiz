@@ -46,3 +46,7 @@ test-memory-array: # Excercise 4
 .PHONY: test-bytes
 test-bytes: # Excercise 5
 	forge test --match-test "test_Bytes"
+
+.PHONY: test-string-index
+test-string-index: # Excercise 6
+	forge test --match-test "test_StringIndex"

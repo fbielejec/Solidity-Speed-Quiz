@@ -17,7 +17,7 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] StringConcat.sol
 - [x] StringCompare.sol
 - [x] MemoryArray.sol
-- [] Bytes.sol
+- [x] Bytes.sol
 - [] StringIndex.sol
 - [] IsFirstBitSet.sol
 - [] IsNBitSet.sol
