@@ -2,8 +2,14 @@
 pragma solidity 0.8.28;
 
 contract StringConcat {
-    function concat(string memory a, string memory b) public pure returns (string memory) {
-        // return the concatenation of a and b
-      return string.concat (a,b);
-    }
+  function concat(string memory a, string memory b) public pure returns (string memory) {
+    // return the concatenation of a and b
+
+    // old Solidity
+    /* bytes memory concatenation = abi.encodePacked(a,b); */
+    /* return string(concatenation); */
+
+    // new compiler versions
+    return string.concat (a,b);
+  }
 }
