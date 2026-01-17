@@ -42,3 +42,7 @@ test-string-compare: # Excercise 3
 .PHONY: test-memory-array
 test-memory-array: # Excercise 4
 	forge test --match-test "test_MemoryArray"
+
+.PHONY: test-bytes
+test-bytes: # Excercise 5
+	forge test --match-test "test_Bytes"

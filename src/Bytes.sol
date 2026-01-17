@@ -2,7 +2,7 @@
 pragma solidity 0.8.28;
 
 contract Bytes {
-    function main(uint8 z) public returns (bytes memory) {
+    function main(uint8 z) public pure returns (bytes memory) {
         // if z = 0, return empty bytes
         // if z = 1, return bytes 0x00
         // if z = 2, return bytes 0x0001
@@ -11,5 +11,13 @@ contract Bytes {
         // ...
         // etc
 
+      bytes memory b = new bytes(0);
+
+      for (uint8 i = 0; i < z; i++) {
+        bytes1 one_byte = bytes1 (i);
+        b = bytes.concat (b, one_byte);
+      }
+
+      return b;
    }
 }
