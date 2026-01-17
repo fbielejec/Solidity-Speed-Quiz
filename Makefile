@@ -17,14 +17,6 @@ watch: # Auto-compile contracts on file changes
 	@echo "Watching for file changes..."
 	forge build --watch
 
-.PHONY: test-remove-element
-test-remove-element: # Excercise 1
-	forge test --match-test "test_removeElement" --match-contract RemoveElement
-
-.PHONY: test-string-concat
-test-string-concat: # Excercise 2
-	forge test --match-test "test_StringConcat"
-
 .PHONY: clean
 clean: # Clean build artifacts
 	@echo "Cleaning build artifacts..."
@@ -34,3 +26,15 @@ clean: # Clean build artifacts
 fmt: # Format Solidity files
 	@echo "Formatting Solidity files..."
 	forge fmt
+
+.PHONY: test-remove-element
+test-remove-element: # Excercise 1
+	forge test --match-test "test_removeElement" --match-contract RemoveElement
+
+.PHONY: test-string-concat
+test-string-concat: # Excercise 2
+	forge test --match-test "test_StringConcat"
+
+.PHONY: test-string-compare
+test-string-compare: # Excercise 3
+	forge test --match-test "test_StringCompare"
