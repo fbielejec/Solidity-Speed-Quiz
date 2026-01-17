@@ -38,3 +38,7 @@ test-string-concat: # Excercise 2
 .PHONY: test-string-compare
 test-string-compare: # Excercise 3
 	forge test --match-test "test_StringCompare"
+
+.PHONY: test-memory-array
+test-memory-array: # Excercise 4
+	forge test --match-test "test_MemoryArray"

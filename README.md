@@ -13,37 +13,37 @@ After you solve the problems, we suggest trying again a week later to test if yo
 ## Suggested Problem Order
 Problems are grouped by theme and generally go from easier to harder.
 
-- RemoveElement.sol
-- StringConcat.sol
-- StringCompare.sol
-- MemoryArray.sol
-- Bytes.sol
-- StringIndex.sol
-- IsFirstBitSet.sol
-- IsNBitSet.sol
-- ConvertToNegative.sol
-- Multiplication.sol
-- MultiplyConstant.sol
-- DivUp.sol
-- NinetyNinePercent.sol
-- RationalFunction.sol
-- TryCatchSimple.sol
-- TryCatchReason.sol
-- ReadStruct.sol
-- BadBank.sol
-- IsContract.sol
-- AccountMaker.sol
-- LowLevel.sol
-- LowLevelArgs1.sol
-- LowLevelArgs2.sol
-- LowLevelReturnUint.sol
-- LowLevelReturnString.sol
-- LowLevelStruct.sol
-- Forwarder.sol
-- SelfCall.sol
-- StorageSet.sol
-- MappingSet.sol
-- NoDelegateCall.sol
-- GetEther.sol
+- [x] RemoveElement.sol
+- [x] StringConcat.sol
+- [x] StringCompare.sol
+- [] MemoryArray.sol
+- [] Bytes.sol
+- [] StringIndex.sol
+- [] IsFirstBitSet.sol
+- [] IsNBitSet.sol
+- [] ConvertToNegative.sol
+- [] Multiplication.sol
+- [] MultiplyConstant.sol
+- [] DivUp.sol
+- [] NinetyNinePercent.sol
+- [] RationalFunction.sol
+- [] TryCatchSimple.sol
+- [] TryCatchReason.sol
+- [] ReadStruct.sol
+- [] BadBank.sol
+- [] IsContract.sol
+- [] AccountMaker.sol
+- [] LowLevel.sol
+- [] LowLevelArgs1.sol
+- [] LowLevelArgs2.sol
+- [] LowLevelReturnUint.sol
+- [] LowLevelReturnString.sol
+- [] LowLevelStruct.sol
+- [] Forwarder.sol
+- [] SelfCall.sol
+- [] StorageSet.sol
+- [] MappingSet.sol
+- [] NoDelegateCall.sol
+- [] GetEther.sol
 
 Fill out the code and then test it with `forge test --match-contract <contract-name>`.
