@@ -18,8 +18,8 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] StringCompare.sol
 - [x] MemoryArray.sol
 - [x] Bytes.sol
-- [] StringIndex.sol
-- [] IsFirstBitSet.sol
+- [x] StringIndex.sol
+- [x] IsFirstBitSet.sol
 - [] IsNBitSet.sol
 - [] ConvertToNegative.sol
 - [] Multiplication.sol

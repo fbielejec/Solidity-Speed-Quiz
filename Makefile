@@ -50,3 +50,7 @@ test-bytes: # Excercise 5
 .PHONY: test-string-index
 test-string-index: # Excercise 6
 	forge test --match-test "test_StringIndex"
+
+.PHONY: test-is-first-bit-set
+test-is-first-bit-set: # Excercise 7
+	forge test --match-test "test_IsFirstBitSet"

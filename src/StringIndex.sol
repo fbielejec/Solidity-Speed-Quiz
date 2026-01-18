@@ -6,6 +6,7 @@ contract StringIndex {
         // return the character at index in str
         // assume str only consists of ascii characters
       bytes memory b = bytes (str);
+      require(index < b.length, "Index out of bounds");
       bytes1 one_byte = b [index];
       bytes memory packed = abi.encodePacked (one_byte);
 
