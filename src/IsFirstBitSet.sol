@@ -8,16 +8,8 @@ contract IsFirstBitSet {
     // for example 0x000....0010 returns false
 
     bytes32 mask = 0x0000000000000000000000000000000000000000000000000000000000000001;
-    bytes32 res = x & mask;
-    bytes1 last_byte = res [31];
-    /* bytes memory ret = abi.encodePacked(last_byte); */
-
-    /* bool ret; */
-    /* assembly { */
-    /*   ret := mload(add(res, 20)) */
-    /*   /\* ret := mload(last_byte) *\/ */
-    /* } */
-
-    return (last_byte == 0x01);
+    return ((x & mask) [31] == 0x01);
+    // or
+    /* return (x & 1) != 0; */
   }
 }
