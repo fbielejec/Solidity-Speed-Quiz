@@ -54,3 +54,7 @@ test-string-index: # Excercise 6
 .PHONY: test-is-first-bit-set
 test-is-first-bit-set: # Excercise 7
 	forge test --match-test "test_IsFirstBitSet"
+
+.PHONY: test-convert-to-negative
+test-convert-to-negative: # Excercise 8
+	forge test --match-test "test_convertToNegative"
