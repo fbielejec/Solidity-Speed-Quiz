@@ -23,7 +23,7 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] IsNBitSet.sol
 - [x] ConvertToNegative.sol
 - [x] Multiplication.sol
-- [] MultiplyConstant.sol
+- [x] MultiplyConstant.sol
 - [] DivUp.sol
 - [] NinetyNinePercent.sol
 - [] RationalFunction.sol

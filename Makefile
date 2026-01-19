@@ -62,3 +62,11 @@ test-convert-to-negative: # Excercise 8
 .PHONY: test-multiplication
 test-multiplication: # Excercise 9
 	forge test -vv --match-test "test_multiply_case"
+
+.PHONY: test-multiply-constant
+test-multiply-constant: # Excercise 10
+	forge test -vv --match-test "test_multiply_constant"
+
+.PHONY: test-div-up
+test-div-up: # Excercise 11
+	forge test -vv --match-test "test_divUp"

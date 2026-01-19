@@ -31,4 +31,9 @@ contract DivUpTest is Test {
     function test_divUp_case5() public {
         assertEq(divUp.divUp(99999, 3), 33333);
     }
+
+    function test_divUp_case6() public {
+        assertEq(divUp.divUp(7, 3), 3);
+    }
+
 }
