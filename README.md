@@ -21,8 +21,8 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] StringIndex.sol
 - [x] IsFirstBitSet.sol
 - [x] IsNBitSet.sol
-- [] ConvertToNegative.sol
-- [] Multiplication.sol
+- [x] ConvertToNegative.sol
+- [x] Multiplication.sol
 - [] MultiplyConstant.sol
 - [] DivUp.sol
 - [] NinetyNinePercent.sol

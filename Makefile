@@ -58,3 +58,7 @@ test-is-first-bit-set: # Excercise 7
 .PHONY: test-convert-to-negative
 test-convert-to-negative: # Excercise 8
 	forge test --match-test "test_convertToNegative"
+
+.PHONY: test-multiplication
+test-multiplication: # Excercise 9
+	forge test -vv --match-test "test_multiply_case"

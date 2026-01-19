@@ -11,17 +11,17 @@ contract MultiplyConstantTest is Test {
         multiplyConstant = new MultiplyConstant();
     }
 
-    function test_multiply_case1() public {
+    function test_multiply_constant_case1() public {
         uint256 fiveTimesX = multiplyConstant.multiply(0);
         assertEq(fiveTimesX, 0);
     }
 
-    function test_multiply_case2() public {
+    function test_multiply_constant_case2() public {
         uint256 fiveTimesX = multiplyConstant.multiply(1);
         assertEq(fiveTimesX, 5);
     }
 
-    function test_multiply_case3() public {
+    function test_multiply_constant_case3() public {
         uint256 fiveTimesX = multiplyConstant.multiply(type(uint16).max);
         assertEq(fiveTimesX, 327675);
     }
