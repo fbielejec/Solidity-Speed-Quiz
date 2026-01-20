@@ -29,17 +29,17 @@ contract TryCatchSimpleTest is Test {
         tryCatch = new TryCatchSimple();
     }
 
-    function test_TryCatch1() public {
+    function test_TryCatchSimple1() public {
         goodToken = new GoodToken("RareSkills");
         assertEq(tryCatch.main(IERC20(address(goodToken))), "RareSkills");
     }
 
-    function test_TryCatch2() public {
+    function test_TryCatchSimple2() public {
         goodToken = new GoodToken("jnq2we0fhao");
         assertEq(tryCatch.main(IERC20(address(goodToken))), "jnq2we0fhao");
     }
 
-    function test_TryCatch3() public {
+    function test_TryCatchSimple3() public {
         badToken = new BadToken();
         assertEq(tryCatch.main(IERC20(address(badToken))), "");
     }

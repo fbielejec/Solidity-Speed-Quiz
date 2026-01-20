@@ -13,5 +13,14 @@ contract TryCatchReason {
         // if the call reverts, return the reason of the revert
         // you will need to create the interface yourself
 
-   }
+      IRare rare = IRare (a);
+
+      try rare.rare (x) {
+        // empty bytes
+        return "";
+      } catch (bytes memory reason) {
+        return reason;
+      }
+
+    }
 }

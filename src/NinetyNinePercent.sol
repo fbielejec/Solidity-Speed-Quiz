@@ -9,6 +9,7 @@ contract NinetyNinePercent {
         // example: x = 4499, y = 4545 return false
         // example: x = 32999999999, y = 33333333333 return false
 
-        // return true if x >= y * 0.99. But remember, Soliidty does not have floats.
+        // return true if x >= y * 0.99. But remember, Solidty does not have floats.
+      return 100 * x >= 99*y;
     }
 }

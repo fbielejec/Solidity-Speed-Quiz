@@ -32,7 +32,7 @@ contract TryCatchReasonTest is Test {
     function test_TryCatchReason_Revert() public {
         Rare2 r2 = new Rare2();
         bytes memory result = c.main(address(r2), 1);
-
+        //                                             Error(string)
         bytes memory expected = abi.encodeWithSelector(0x08c379a0, "rare");
         assertEq(result, expected);
     }

@@ -70,3 +70,23 @@ test-multiply-constant: # Excercise 10
 .PHONY: test-div-up
 test-div-up: # Excercise 11
 	forge test -vv --match-test "test_divUp"
+
+.PHONY: test-is-99-percent
+test-is-99-percent: # Excercise 12
+	forge test -vv --match-test "test_is99Percent"
+
+.PHONY: test-rational-function
+test-rational-function: # Excercise 13
+	forge test -vv --match-test "test_rationalFunction"
+
+.PHONY: test-try-catch-simple
+test-try-catch-simple: # Excercise 14
+	forge test -vv --match-test "test_TryCatchSimple"
+
+.PHONY: test-try-catch-reason
+test-try-catch-reason: # Excercise 15
+	forge test -vv --match-test "test_TryCatchReason"
+
+.PHONY: test-read-struct
+test-read-struct: # Excercise 1
+	forge test -vv --match-test "test_ReadStruct"
