@@ -30,7 +30,7 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] TryCatchSimple.sol
 - [x] TryCatchReason.sol
 - [x] ReadStruct.sol
-- [] BadBank.sol
+- [x] BadBank.sol
 - [] IsContract.sol
 - [] AccountMaker.sol
 - [] LowLevel.sol

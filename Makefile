@@ -88,5 +88,9 @@ test-try-catch-reason: # Excercise 15
 	forge test -vv --match-test "test_TryCatchReason"
 
 .PHONY: test-read-struct
-test-read-struct: # Excercise 1
+test-read-struct: # Excercise 16
 	forge test -vv --match-test "test_ReadStruct"
+
+.PHONY: test-bad-bank
+test-bad-bank: # Excercise 17
+	forge test -vv --match-test "test_RobTheBank"
