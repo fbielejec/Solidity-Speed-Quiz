@@ -24,14 +24,22 @@ contract LowLevelTest is Test {
         f1 = new FooFail();
         f2 = new FooSuccess();
     }
- 
+
     function test_LowLevelRevert() public {
-        bool result = c.main(address(f1));
+        bool result;
+        result = c.main1(address(f1));
+        assertEq(result, false);
+
+        result = c.main2(address(f1));
         assertEq(result, false);
     }
 
     function test_LowLevelSuccess() public {
-        bool result = c.main(address(f2));
-        assertEq(result, true);
+      bool result;
+      result = c.main1(address(f2));
+      assertEq(result, true);
+
+      result = c.main2(address(f2));
+      assertEq(result, true);
     }
 }

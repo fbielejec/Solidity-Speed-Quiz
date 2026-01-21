@@ -102,3 +102,11 @@ test-is-contract: # Excercise 18
 .PHONY: test-account-maker
 test-account-maker: # Excercise 19
 	forge test -vv --match-test "test_accountMaker"
+
+.PHONY: test-low-level
+test-low-level: # Excercise 20
+	forge test -vv --match-test "test_LowLevel(Success|Revert)"
+
+.PHONY: test-low-level-args1
+test-low-level-args1: # Excercise 22
+	forge test -vv --match-test "test_LowLevelArgs1"

@@ -26,12 +26,18 @@ contract LowLevelArgs1Test is Test {
     }
 
     function test_LowLevelArgs1(uint256 x) public {
-        c.main(address(s), x);
+        c.main1(address(s), x);
+        assertEq(s.x(), x);
+
+        c.main2(address(s), x);
         assertEq(s.x(), x);
     }
 
     function test_LowLevelArgs1_revert() public {
         vm.expectRevert();
-        c.main(address(s2), 1);
+        c.main1(address(s2), 1);
+
+        vm.expectRevert();
+        c.main2(address(s2), 1);
     }
-}   
+}
