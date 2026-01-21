@@ -31,8 +31,8 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] TryCatchReason.sol
 - [x] ReadStruct.sol
 - [x] BadBank.sol
-- [] IsContract.sol
-- [] AccountMaker.sol
+- [x] IsContract.sol
+- [x] AccountMaker.sol
 - [] LowLevel.sol
 - [] LowLevelArgs1.sol
 - [] LowLevelArgs2.sol

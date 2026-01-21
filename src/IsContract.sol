@@ -7,5 +7,7 @@ contract IsContract {
         // return true if the address has bytecode
         // sidenote: as of EIP-7702, EOAs can have bytecode
 
+      // see https://rareskills.io/post/solidity-code-length
+      return (addr.code.length != 0);
     }
 }

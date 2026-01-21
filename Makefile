@@ -94,3 +94,11 @@ test-read-struct: # Excercise 16
 .PHONY: test-bad-bank
 test-bad-bank: # Excercise 17
 	forge test -vv --match-test "test_RobTheBank"
+
+.PHONY: test-is-contract
+test-is-contract: # Excercise 18
+	forge test -vv --match-test "test_isContract"
+
+.PHONY: test-account-maker
+test-account-maker: # Excercise 19
+	forge test -vv --match-test "test_accountMaker"
