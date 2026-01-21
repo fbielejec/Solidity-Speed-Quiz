@@ -29,19 +29,19 @@ contract LowLevelReturnStringTest is Test {
         c = new LowLevelReturnString();
     }
 
-    function test_LowLevelReturn1() public {
+    function test_LowLevelReturnString1() public {
         Baz1 b = new Baz1();
         string memory result = c.main(address(b));
         assertEq(result, "Hello, World!");
     }
 
-    function test_LowLevelReturn2() public {
+    function test_LowLevelReturnString2() public {
         Baz2 b = new Baz2();
         string memory result = c.main(address(b));
         assertEq(result, "Goodbye, World!");
     }
-    
-    function test_LowLevelReturn3() public {
+
+    function test_LowLevelReturnString3() public {
         Baz3 b = new Baz3();
         string memory result = c.main(address(b));
         assertEq(result, "");

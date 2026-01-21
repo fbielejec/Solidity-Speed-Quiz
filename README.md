@@ -36,9 +36,9 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] LowLevel.sol
 - [x] LowLevelArgs1.sol
 - [x] LowLevelArgs2.sol
-- [] LowLevelReturnUint.sol
-- [] LowLevelReturnString.sol
-- [] LowLevelStruct.sol
+- [x] LowLevelReturnUint.sol
+- [x] LowLevelReturnString.sol
+- [x] LowLevelStruct.sol
 - [] Forwarder.sol
 - [] SelfCall.sol
 - [] StorageSet.sol

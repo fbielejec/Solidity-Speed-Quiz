@@ -118,3 +118,15 @@ test-low-level-args2: # Excercise 23
 .PHONY: test-low-level-return-uint
 test-low-level-return-uint: # Excercise 24
 	forge test -vv --match-test "test_LowLevelReturnUint"
+
+.PHONY: test-low-level-return-string
+test-low-level-return-string: # Excercise 25
+	forge test -vv --match-test "test_LowLevelReturnString"
+
+.PHONY: test-low-level-struct
+test-low-level-struct: # Excercise 26
+	forge test -vv --match-test "test_LowLevelStruct"
+
+.PHONY: test-forwarder
+test-forwarder: # Excercise 27
+	forge test -vv --match-test "test_Forwarder"
