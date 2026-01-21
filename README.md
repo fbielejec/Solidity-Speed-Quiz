@@ -34,8 +34,8 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] IsContract.sol
 - [x] AccountMaker.sol
 - [x] LowLevel.sol
-- [] LowLevelArgs1.sol
-- [] LowLevelArgs2.sol
+- [x] LowLevelArgs1.sol
+- [x] LowLevelArgs2.sol
 - [] LowLevelReturnUint.sol
 - [] LowLevelReturnString.sol
 - [] LowLevelStruct.sol

@@ -17,6 +17,7 @@ contract LowLevelArgs1 {
          revert ();
        }
     }
+
     function main2(address a, uint256 x) public {
         // bonus challenge: use an interface and a high level call to accomplish the same task
       IRare(a).rare(x);

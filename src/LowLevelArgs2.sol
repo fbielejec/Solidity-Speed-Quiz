@@ -6,6 +6,11 @@ contract LowLevelArgs2 {
         // call rare(x, y) using a low-level call
         // if the low level call reverts, revert also
 
+       (bool success, ) = a.call{value: 0 ether}(abi.encodeWithSignature("rare(uint256,uint256)",x,y));
+       if (!success) {
+         revert ();
+       }
+
         // bonus challenge: use an interface and a high level call to accomplish the same task
     }
 }

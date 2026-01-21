@@ -110,3 +110,11 @@ test-low-level: # Excercise 20
 .PHONY: test-low-level-args1
 test-low-level-args1: # Excercise 22
 	forge test -vv --match-test "test_LowLevelArgs1"
+
+.PHONY: test-low-level-args2
+test-low-level-args2: # Excercise 23
+	forge test -vv --match-test "test_LowLevelArgs2"
+
+.PHONY: test-low-level-return-uint
+test-low-level-return-uint: # Excercise 24
+	forge test -vv --match-test "test_LowLevelReturnUint"

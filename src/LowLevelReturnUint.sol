@@ -8,5 +8,8 @@ contract LowLevelReturnUint {
         // return the return value of the call
 
         // bonus challenge: use an interface and a high level call to accomplish the same task
+       /* (, bytes memory data) = a.call{value: 0 ether}(abi.encodeWithSignature("bar()")); */
+      (, bytes memory data) = a.call(abi.encodeWithSelector(bytes4(keccak256("bar()"))));
+      return uint256(bytes32(data));
     }
 }
