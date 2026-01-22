@@ -27,6 +27,10 @@ fmt: # Format Solidity files
 	@echo "Formatting Solidity files..."
 	forge fmt
 
+.PHONY: test
+test: # test all
+	forge test -vv
+
 .PHONY: test-remove-element
 test-remove-element: # Excercise 1
 	forge test --match-test "test_removeElement" --match-contract RemoveElement
@@ -54,6 +58,10 @@ test-string-index: # Excercise 6
 .PHONY: test-is-first-bit-set
 test-is-first-bit-set: # Excercise 7
 	forge test --match-test "test_IsFirstBitSet"
+
+.PHONY: test-is-n-bit-set
+test-is-n-bit-set: # Excercise 7.5
+	forge test --match-test "test_IsNBitSet"
 
 .PHONY: test-convert-to-negative
 test-convert-to-negative: # Excercise 8

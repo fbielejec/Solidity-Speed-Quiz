@@ -20,7 +20,7 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] Bytes.sol
 - [x] StringIndex.sol
 - [x] IsFirstBitSet.sol
-- [x] IsNBitSet.sol
+- [] IsNBitSet.sol
 - [x] ConvertToNegative.sol
 - [x] Multiplication.sol
 - [x] MultiplyConstant.sol

@@ -7,5 +7,11 @@ contract IsNBitSet {
         // 000....0001 with n = 0 returns true
         // 000....0001 with n = 1 returns false
         // 000....0010 with n = 1 returns true
+
+    bytes32 mask = 0x0000000000000000000000000000000000000000000000000000000000000000;
+    /* return ((x & mask) [n] == 0x01); */
+
+    /* mask [n] = 1; */
+
     }
 }
