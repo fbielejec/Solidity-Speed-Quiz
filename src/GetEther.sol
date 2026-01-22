@@ -22,7 +22,14 @@ contract GetEther {
 
     // fu will be executed in the context of contract that delegates the call
     function fu (address payable to) public payable {
-       to.send (1 ether);
+
+      // NOTE: why this fails?
+  /* 1. `send()` only forwards 2300 gas (not enough for the `receive()` function with logging) */
+  /* 2. `call` forwards all available gas by default */
+       /* to.send (1 ether); */
+
+      (bool success, ) = to.call{value: 1 ether}("");
+      require(success, "Transfer failed");
     }
 
     receive() external payable {
@@ -30,10 +37,10 @@ contract GetEther {
       console.log ("@receivedETH", msg.value);
     }
 
-    fallback() external payable {
-      uint256 t = msg.value;
-      console.log ("@gotETH", t);
-    }
+    /* fallback() external payable { */
+    /*   uint256 t = msg.value; */
+    /*   /\* console.log ("@gotETH", t); *\/ */
+    /* } */
 
 }
 
