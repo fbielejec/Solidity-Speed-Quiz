@@ -2,7 +2,7 @@
 pragma solidity 0.8.28;
 
 import {Address} from "@openzeppelin/contracts/utils/Address.sol";
-import {Test, console} from "forge-std/Test.sol";
+import {console} from "forge-std/Test.sol";
 
 contract BadBank {
     using Address for address;

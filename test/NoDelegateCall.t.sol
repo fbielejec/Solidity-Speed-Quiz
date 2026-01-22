@@ -15,7 +15,7 @@ contract NoDelegateCallTest is Test {
         assertEq(noDelegateCall.meaningOfLifeAndEverything(), 42);
     }
 
-    function test_delegatecall_meaningOfLifeAndEverything() public {
+    function test_meaningOfLifeAndEverything_delegatecall() public {
         (bool ok, bytes memory ret) = address(noDelegateCall).delegatecall(abi.encodeWithSelector(NoDelegateCall.meaningOfLifeAndEverything.selector));
         assertEq(ok, false);
     }

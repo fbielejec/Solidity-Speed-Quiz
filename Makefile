@@ -130,3 +130,23 @@ test-low-level-struct: # Excercise 26
 .PHONY: test-forwarder
 test-forwarder: # Excercise 27
 	forge test -vv --match-test "test_Forwarder"
+
+.PHONY: test-self-call
+test-self-call: # Excercise 28
+	forge test -vv --match-test "test_SelfCall"
+
+.PHONY: test-storage-set
+test-storage-set: # Excercise 29
+	forge test -vv --match-test "test_(increment|increment_twice)"
+
+.PHONY: test-increment3
+test-increment3: # Excercise 30
+	forge test -vv --match-test "test_(increment3 |increment3_twice)"
+
+.PHONY: test-no-delegatecall
+test-no-delegatecall: # Excercise 31
+	forge test -vv --match-test "test_meaningOfLifeAndEverything"
+
+.PHONY: test-get-ether
+test-get-ether: # Excercise 32
+	forge test -vv --match-test "test_getEther"

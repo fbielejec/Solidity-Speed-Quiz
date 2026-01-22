@@ -39,11 +39,11 @@ Problems are grouped by theme and generally go from easier to harder.
 - [x] LowLevelReturnUint.sol
 - [x] LowLevelReturnString.sol
 - [x] LowLevelStruct.sol
-- [] Forwarder.sol
-- [] SelfCall.sol
-- [] StorageSet.sol
-- [] MappingSet.sol
-- [] NoDelegateCall.sol
+- [x] Forwarder.sol
+- [x] SelfCall.sol
+- [x] StorageSet.sol
+- [x] MappingSet.sol
+- [x] NoDelegateCall.sol
 - [] GetEther.sol
 
 Fill out the code and then test it with `forge test --match-contract <contract-name>`.

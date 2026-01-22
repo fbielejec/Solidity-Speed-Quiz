@@ -3,11 +3,17 @@ pragma solidity 0.8.28;
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {Address} from "@openzeppelin/contracts/utils/Address.sol";
+import {console} from "forge-std/Test.sol";
 
 contract YourContract {
     function main(address target, address forwarder) public {
         // make the right function call such that YourContract gets 100 tokens
         // you may only modify this function
+
+      bytes memory data = abi.encodeWithSignature("giveTokens(address)", address (this));
+      (bool success, ) = forwarder.call(abi.encodeWithSignature("forward(address,bytes)", target, data));
+
+      console.log ("@isSuccess", success);
     }
 }
 
