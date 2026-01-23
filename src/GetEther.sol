@@ -24,9 +24,10 @@ contract GetEther {
     function fu (address payable to) public payable {
 
       // NOTE: why this fails?
-  /* 1. `send()` only forwards 2300 gas (not enough for the `receive()` function with logging) */
-  /* 2. `call` forwards all available gas by default */
-       /* to.send (1 ether); */
+      /* to.send (1 ether); */
+      // EXPLANATION:
+      /* 1. `send()` only forwards 2300 gas (not enough for the `receive()` function with logging) */
+      /* 2. `call` forwards all available gas by default */
 
       (bool success, ) = to.call{value: 1 ether}("");
       require(success, "Transfer failed");
